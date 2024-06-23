@@ -82,7 +82,7 @@ export function Tabs() {
       });
       gsap.to('.tarama-ust', {
         duration: 2,
-        height: '50%',
+        height: '43%',
         opacity: 1,
         delay: 1,
         ease: 'power1.inOut',
