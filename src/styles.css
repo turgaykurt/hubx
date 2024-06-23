@@ -166,6 +166,41 @@ a:link {
   margin: 0 auto;
 }
 
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .tarama-dis {
+  position: absolute;
+  top: 36%;
+  right: 0;
+  left: 0;
+
+  width: 54%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .tarama-dis .tarama-ust {
+  width: 100%;
+  padding: 0 7px;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .tarama-dis .tarama-ust-ic {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(3 129 255 / 80%) 0%,
+    rgba(3 129 255 / 20%) 100%
+  );
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .tarama-dis .tarama-alt {
+  width: 100%;
+  height: 5px;
+  background: #0381ff;
+  box-shadow:
+    rgba(255 255 255 / 60%) 0 2px 4px 0,
+    rgba(255 255 255 / 60%) 0 2px 16px 0;
+}
+
 .hubx .tabcontent .sutun .sutun-1 .img-cerceve .sign {
   position: absolute;
   bottom: 18%;
@@ -195,7 +230,6 @@ a:link {
   height: auto;
   margin: 0 auto;
 }
-
 
 .hubx .tabcontent .sutun .sutun-1 .img-cerceve .progress-1 {
   position: absolute;
@@ -347,7 +381,6 @@ a:link {
   transition: all 0.3s;
 }
 
-
 @media (hover: hover) {
   .hubx .tab button:hover {
     border: 2px solid #0381ff;
@@ -410,6 +443,11 @@ a:link {
 
   .hubx .tabcontent .sutun .sutun-1 .img-cerceve .telefon {
     width: 65%;
+  }
+
+  .hubx .tabcontent .sutun .sutun-1 .img-cerceve .tarama-dis {
+    top: 42%;
+    width: 46%;
   }
 
   .hubx .tabcontent .sutun .sutun-1 .img-cerceve .progress-1 {

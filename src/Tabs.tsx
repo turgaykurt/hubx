@@ -66,6 +66,29 @@ export function Tabs() {
       });
     }
 
+    if (tabName === 'document_scanneer') {
+      gsap.set('.tarama-dis', {
+        opacity: 0,
+      });
+      gsap.to('.tarama-dis', {
+        duration: 0,
+        opacity: 1,
+        delay: 1,
+      });
+
+      gsap.set('.tarama-ust', {
+        height: '0%',
+        opacity: 0,
+      });
+      gsap.to('.tarama-ust', {
+        duration: 2,
+        height: '50%',
+        opacity: 1,
+        delay: 1,
+        ease: 'power1.inOut',
+      });
+    }
+
     if (tabName === 'sign_stamp') {
       gsap.set('.sign', {
         scale: 0,
@@ -276,9 +299,15 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="/images/document_scanner_phone.webp"
+                  src="/images/document_scanner_phone_2.webp"
                   alt="Document Scanner Phone"
                 />
+                <div className="tarama-dis">
+                  <div className="tarama-ust">
+                    <div className="tarama-ust-ic"></div>
+                  </div>
+                  <div className="tarama-alt"></div>
+                </div>
               </div>
             </div>
             <div className="sutun-2">
