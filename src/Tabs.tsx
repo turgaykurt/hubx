@@ -276,7 +276,7 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="../public/images/document_scanner_phone.webp"
+                  src="/images/document_scanner_phone.webp"
                   alt="Document Scanner Phone"
                 />
               </div>
