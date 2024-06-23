@@ -11,9 +11,9 @@ export function Tabs() {
     }
   }, []);
 
-  const openCity = (
+  const openTab = (
     evt: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-    cityName: string,
+    tabName: string,
   ) => {
     const tabcontent = document.getElementsByClassName('tabcontent');
     for (let i = 0; i < tabcontent.length; i++) {
@@ -29,7 +29,7 @@ export function Tabs() {
       }
     }
 
-    const currentTab = document.getElementById(cityName);
+    const currentTab = document.getElementById(tabName);
     if (currentTab) {
       currentTab.style.display = 'block';
     }
@@ -42,10 +42,10 @@ export function Tabs() {
       }, 0);
     }
 
-    resetAndAnimate(cityName);
+    resetAndAnimate(tabName);
   };
 
-  const resetAndAnimate = (cityName: string) => {
+  const resetAndAnimate = (tabName: string) => {
     gsap.set('.telefon', {
       bottom: '-200%',
     });
@@ -66,7 +66,7 @@ export function Tabs() {
       });
     }
 
-    if (cityName === 'sign_stamp') {
+    if (tabName === 'sign_stamp') {
       gsap.set('.sign', {
         scale: 0,
       });
@@ -114,7 +114,7 @@ export function Tabs() {
       }
     }
 
-    if (cityName === 'batch_scanning') {
+    if (tabName === 'batch_scanning') {
       gsap.set('.paper-1', {
         bottom: '-100%',
         scale: 1,
@@ -190,7 +190,7 @@ export function Tabs() {
       }
     }
 
-    if (cityName === 'advanced_filters') {
+    if (tabName === 'advanced_filters') {
       gsap.set('.progress-1', {
         opacity: 0,
       });
@@ -212,7 +212,7 @@ export function Tabs() {
       });
     }
 
-    if (cityName === 'export_share') {
+    if (tabName === 'export_share') {
       gsap.set('.arrow', {
         bottom: '-70px',
         x: 70,
@@ -276,7 +276,7 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="src/img/document_scanner_phone.webp"
+                  src="public/images/document_scanner_phone.webp"
                   alt="Document Scanner Phone"
                 />
               </div>
@@ -299,17 +299,17 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="src/img/sign_stamp_phone.webp"
+                  src="public/images/sign_stamp_phone.webp"
                   alt="Sign Stamp Phone"
                 />
                 <img
                   className="sign"
-                  src="src/img/sign_stamp_sign.webp"
+                  src="public/images/sign_stamp_sign.webp"
                   alt="Sign"
                 />
                 <img
                   className="completed"
-                  src="src/img/sign_stamp_completed.webp"
+                  src="public/images/sign_stamp_completed.webp"
                   alt="Completed"
                 />
               </div>
@@ -332,22 +332,22 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="src/img/batch_scanning_phone.webp"
+                  src="public/images/batch_scanning_phone.webp"
                   alt="Batch Scanning Phone"
                 />
                 <img
                   className="paper paper-3"
-                  src="src/img/batch_scanning_paper.webp"
+                  src="public/images/batch_scanning_paper.webp"
                   alt="Batch Scanning Paper 3"
                 />
                 <img
                   className="paper paper-2"
-                  src="src/img/batch_scanning_paper.webp"
+                  src="public/images/batch_scanning_paper.webp"
                   alt="Batch Scanning Paper 2"
                 />
                 <img
                   className="paper paper-1"
-                  src="src/img/batch_scanning_paper.webp"
+                  src="public/images/batch_scanning_paper.webp"
                   alt="Batch Scanning Paper 1"
                 />
               </div>
@@ -370,17 +370,17 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="src/img/advanced_filters_phone.webp"
+                  src="public/images/advanced_filters_phone.webp"
                   alt="Advanced Filters Phone"
                 />
                 <img
                   className="progress-1"
-                  src="src/img/advanced_filters_progress_1.svg"
+                  src="public/images/advanced_filters_progress_1.svg"
                   alt="Progress 1"
                 />
                 <img
                   className="progress-2"
-                  src="src/img/advanced_filters_progress_2.svg"
+                  src="public/images/advanced_filters_progress_2.svg"
                   alt="Progress 2"
                 />
               </div>
@@ -404,27 +404,27 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="src/img/export_share_phone.webp"
+                  src="public/images/export_share_phone.webp"
                   alt="Export Share Phone"
                 />
                 <img
                   className="arrow"
-                  src="src/img/export_share_arrow.svg"
+                  src="public/images/export_share_arrow.svg"
                   alt="Arrow"
                 />
                 <img
                   className="pdf"
-                  src="src/img/export_share_pdf.svg"
+                  src="public/images/export_share_pdf.svg"
                   alt="PDF"
                 />
                 <img
                   className="jpg"
-                  src="src/img/export_share_jpg.svg"
+                  src="public/images/export_share_jpg.svg"
                   alt="JPG"
                 />
                 <img
                   className="txt"
-                  src="src/img/export_share_txt.svg"
+                  src="public/images/export_share_txt.svg"
                   alt="TXT"
                 />
               </div>
@@ -467,7 +467,7 @@ export function Tabs() {
           <SplideSlide>
             <button
               className="tablinks"
-              onClick={(e) => openCity(e, 'document_scanneer')}
+              onClick={(e) => openTab(e, 'document_scanneer')}
               id="defaultOpen"
             >
               <svg
@@ -508,7 +508,7 @@ export function Tabs() {
           <SplideSlide>
             <button
               className="tablinks"
-              onClick={(e) => openCity(e, 'sign_stamp')}
+              onClick={(e) => openTab(e, 'sign_stamp')}
             >
               <svg
                 className="circle-animation"
@@ -548,7 +548,7 @@ export function Tabs() {
           <SplideSlide>
             <button
               className="tablinks"
-              onClick={(e) => openCity(e, 'batch_scanning')}
+              onClick={(e) => openTab(e, 'batch_scanning')}
             >
               <svg
                 className="circle-animation"
@@ -588,7 +588,7 @@ export function Tabs() {
           <SplideSlide>
             <button
               className="tablinks"
-              onClick={(e) => openCity(e, 'advanced_filters')}
+              onClick={(e) => openTab(e, 'advanced_filters')}
             >
               <svg
                 className="circle-animation"
@@ -628,7 +628,7 @@ export function Tabs() {
           <SplideSlide>
             <button
               className="tablinks"
-              onClick={(e) => openCity(e, 'export_share')}
+              onClick={(e) => openTab(e, 'export_share')}
             >
               <svg
                 className="circle-animation"
