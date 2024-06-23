@@ -1,0 +1,457 @@
+/* ---------- Temel ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+button,
+select,
+form,
+input {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+section {
+  display: flow-root;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+ul,
+ol,
+dl {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+p:last-child,
+ul:last-child,
+ol:last-child,
+dl:last-child {
+  margin-block-end: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 42px;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+a {
+  color: #000;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+:focus {
+  background: none;
+  outline: 0;
+}
+
+.kapsayici {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+.hubx {
+  background: #fbfcfc;
+}
+
+@keyframes fade-effect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hubx .tabcontent {
+  display: none;
+  animation: fade-effect 1s;
+}
+
+.hubx .tabcontent .sutun {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.hubx .tabcontent .sutun .sutun-1 {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 129px 129px 0 120px;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve {
+  position: relative;
+  display: flex;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .telefon {
+  position: absolute;
+  right: 0;
+  bottom: -600px;
+  left: 0;
+
+  width: 77.5%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .sign {
+  position: absolute;
+  bottom: 18%;
+  left: -10.5%;
+  scale: 0;
+
+  width: 46%;
+  height: auto;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .completed {
+  position: absolute;
+  right: -8%;
+  bottom: 35%;
+
+  width: 46%;
+  height: auto;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .paper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .progress-1 {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+
+  width: 9.5%;
+  height: auto;
+
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .progress-2 {
+  position: absolute;
+  right: 4%;
+  bottom: 3%;
+
+  width: 9.5%;
+  height: auto;
+
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .arrow {
+  position: absolute;
+  bottom: 7%;
+  left: 3%;
+  transform: rotate(-39deg);
+
+  width: 8%;
+  height: auto;
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .pdf {
+  position: absolute;
+  bottom: 7%;
+  left: 8%;
+
+  width: 28%;
+  height: auto;
+
+  filter: drop-shadow(-6px 10px 10px rgba(0 0 0 / 40%));
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .jpg {
+  position: absolute;
+  right: 0;
+  bottom: 13%;
+  left: 0;
+
+  width: 28%;
+  height: auto;
+  margin: 0 auto;
+
+  filter: drop-shadow(-6px 10px 10px rgba(0 0 0 / 40%));
+}
+
+.hubx .tabcontent .sutun .sutun-1 .img-cerceve .txt {
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
+
+  width: 28%;
+  height: auto;
+
+  filter: drop-shadow(6px 10px 10px rgba(0 0 0 / 40%));
+}
+
+.hubx .tabcontent .sutun .sutun-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding: 160px 129px 109px 0;
+}
+
+.hubx .tabcontent .sutun .sutun-2 h2 {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 800;
+  color: #0381ff;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hubx .tabcontent .sutun .sutun-2 h3 {
+  margin-bottom: 20px;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #0b122a;
+  text-align: right;
+}
+
+.hubx .tabcontent .sutun .sutun-2 p {
+  margin-bottom: 30px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #0b172a;
+  text-align: right;
+  letter-spacing: 0.8px;
+}
+
+.hubx .tabcontent .sutun .sutun-2 a {
+  padding: 15px 20px;
+
+  font-size: 20px;
+  font-weight: 400;
+  color: #0b122a;
+  text-align: center;
+
+  border: 1px solid rgba(0 0 0 / 16%);
+
+  transition: all 0.3s;
+}
+
+.hubx .tabcontent .sutun .sutun-2 a:hover {
+  border: 1px solid rgba(0 0 0 / 100%);
+}
+
+.hubx .tab {
+  background: #fff;
+}
+
+.hubx .tab button {
+  cursor: pointer;
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  padding: 33px 46px;
+
+  font-size: 20px;
+  white-space: nowrap;
+
+  background: #fff;
+  border: 2px solid transparent;
+  outline: none;
+
+  transition: all 0.3s;
+}
+
+
+@media (hover: hover) {
+  .hubx .tab button:hover {
+    border: 2px solid #0381ff;
+  }
+}
+
+.hubx .tab button.active {
+  background: rgba(3 129 255 / 10%);
+}
+
+.hubx .tab button .circle-animation circle {
+  transform-origin: center center;
+  transform: rotate(-90deg) scaleY(-1);
+}
+
+.hubx .tab button.active .circle-animation circle {
+  fill: #fff;
+}
+
+.hubx .tab button .progress-circle {
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.hubx .tab button svg {
+  color: #666;
+}
+
+.hubx .tab button.active svg {
+  color: #0381ff;
+}
+
+.hubx .tab .splide:not(.is-overflow) ul {
+  justify-content: center;
+}
+
+.hubx .tab .splide ul li {
+  border-right: 1px solid rgba(0 0 0 / 8%);
+}
+
+.hubx .tab .splide ul li:last-child {
+  border-right: 0;
+}
+
+/* Telefon */
+@media (1px <=width <=767px) {
+  .hubx .tabcontent .sutun {
+    grid-template-columns: 1fr;
+  }
+
+  .hubx .tabcontent .sutun .sutun-1 {
+    display: flex;
+    order: 1;
+    padding: 0;
+  }
+
+  .hubx .tabcontent .sutun .sutun-1 .img-cerceve {
+    aspect-ratio: 44 / 35;
+  }
+
+  .hubx .tabcontent .sutun .sutun-1 .img-cerceve .telefon {
+    width: 65%;
+  }
+
+  .hubx .tabcontent .sutun .sutun-1 .img-cerceve .progress-1 {
+    bottom: 3%;
+    left: 12%;
+    width: 8%;
+    border-radius: 13px;
+  }
+
+  .hubx .tabcontent .sutun .sutun-1 .img-cerceve .progress-2 {
+    right: 12%;
+    width: 8%;
+    border-radius: 13px;
+  }
+
+  .hubx .tabcontent .sutun .sutun-2 {
+    align-items: center;
+    min-height: 340px;
+    padding: 50px 24px 16px;
+  }
+
+  .hubx .tabcontent .sutun .sutun-2 h2 {
+    text-align: center;
+  }
+
+  .hubx .tabcontent .sutun .sutun-2 h3 {
+    text-align: center;
+  }
+
+  .hubx .tabcontent .sutun .sutun-2 p {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .hubx .tabcontent .sutun .sutun-2 a {
+    font-size: 14px;
+    color: #0b122a;
+    text-align: center;
+  }
+
+  .hubx .tab button {
+    padding: 20px 30px;
+  }
+}

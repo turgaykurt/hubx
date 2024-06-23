@@ -33,6 +33,3 @@ npm run lint
 ```sh
 npm run format
 ```
-# hubx
-# hubx
-# hubx
