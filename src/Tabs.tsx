@@ -299,17 +299,17 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="public/images/sign_stamp_phone.webp"
+                  src="/images/sign_stamp_phone.webp"
                   alt="Sign Stamp Phone"
                 />
                 <img
                   className="sign"
-                  src="public/images/sign_stamp_sign.webp"
+                  src="/images/sign_stamp_sign.webp"
                   alt="Sign"
                 />
                 <img
                   className="completed"
-                  src="public/images/sign_stamp_completed.webp"
+                  src="/images/sign_stamp_completed.webp"
                   alt="Completed"
                 />
               </div>
@@ -332,22 +332,22 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="public/images/batch_scanning_phone.webp"
+                  src="/images/batch_scanning_phone.webp"
                   alt="Batch Scanning Phone"
                 />
                 <img
                   className="paper paper-3"
-                  src="public/images/batch_scanning_paper.webp"
+                  src="/images/batch_scanning_paper.webp"
                   alt="Batch Scanning Paper 3"
                 />
                 <img
                   className="paper paper-2"
-                  src="public/images/batch_scanning_paper.webp"
+                  src="/images/batch_scanning_paper.webp"
                   alt="Batch Scanning Paper 2"
                 />
                 <img
                   className="paper paper-1"
-                  src="public/images/batch_scanning_paper.webp"
+                  src="/images/batch_scanning_paper.webp"
                   alt="Batch Scanning Paper 1"
                 />
               </div>
@@ -370,17 +370,17 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="public/images/advanced_filters_phone.webp"
+                  src="/images/advanced_filters_phone.webp"
                   alt="Advanced Filters Phone"
                 />
                 <img
                   className="progress-1"
-                  src="public/images/advanced_filters_progress_1.svg"
+                  src="/images/advanced_filters_progress_1.svg"
                   alt="Progress 1"
                 />
                 <img
                   className="progress-2"
-                  src="public/images/advanced_filters_progress_2.svg"
+                  src="/images/advanced_filters_progress_2.svg"
                   alt="Progress 2"
                 />
               </div>
@@ -404,27 +404,27 @@ export function Tabs() {
               <div className="img-cerceve">
                 <img
                   className="telefon"
-                  src="public/images/export_share_phone.webp"
+                  src="/images/export_share_phone.webp"
                   alt="Export Share Phone"
                 />
                 <img
                   className="arrow"
-                  src="public/images/export_share_arrow.svg"
+                  src="/images/export_share_arrow.svg"
                   alt="Arrow"
                 />
                 <img
                   className="pdf"
-                  src="public/images/export_share_pdf.svg"
+                  src="/images/export_share_pdf.svg"
                   alt="PDF"
                 />
                 <img
                   className="jpg"
-                  src="public/images/export_share_jpg.svg"
+                  src="/images/export_share_jpg.svg"
                   alt="JPG"
                 />
                 <img
                   className="txt"
-                  src="public/images/export_share_txt.svg"
+                  src="/images/export_share_txt.svg"
                   alt="TXT"
                 />
               </div>
